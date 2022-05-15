@@ -5,6 +5,6 @@ request.post("http://growtopia2.com/growtopia/server_data.php", { body: "version
     else {
         var server_data = body.split("\n");
         console.log(`IP:${server_data[Math.floor(0)].replace("server|", "")}`);
-		    console.log(`PORT:${server_data[Math.floor(1)].replace("port|", "")}`);
+	console.log(`PORT:${server_data[Math.floor(1)].replace("port|", "")}`);
     }
 });
